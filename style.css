@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background: #222222; 
+}
+.inner-main{
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.card1, .card2, .card3{
+    width: 300px;
+    height: 450px;
+    background: #444444;
+    margin: 0 10px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 4px 4px 25px rgba(0,0,0,0.6);
+}
+.card2{
+    width: 350px;
+    height: 500px;
+}
+.card1{
+    background: #fd5a35;
+    background: linear-gradient(to top,#c60947, #fd5a35);
+}
+.card2{
+    background: #84abeb;
+    background: linear-gradient(to, top, #003c9f, #0057e3);
+}
+.card3{
+    background: #ad40c3;
+    background: linear-gradient(to, top, #5d006a, #ad40c3);
+}
+.card1 .card1-svg, .card2 .card2-svg, .card3 .card3-svg
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+.card1 h2, .card2 h2, .card3 h2
+{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 15px 0 5px 0;
+     position: relative;
+}
+.card1 h2::after, .card2 h2::after. .card3 h2::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 40px;
+    background: #fff;
+    border-radius: 50px;
+}
+.card1::after, .card2::after, .card3::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 145%;
+    transform: skewX(45deg);
+    width: 150%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+    transition: 1s all ease;
+    z-index: 0;
+}
+.card1:hover:after, .card2:hover:after, .card3:hover:after
+{
+    left: 85%;
+    transform: skewX(35deg);
+}
+.card1 .price, .card2 .price, .card3 .price
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.price .doller{
+    font-family: 'Poppins';
+    font-size: 75px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.5);
+    text-shadow: 0 0 5px rgba(0,0,0,0.1);
+    line-height: 1;
+    padding: 20px 0 0 0;
+    margin-left: -15px;
+}
+.card2 .price .doller
+{
+    padding: 30px 0 0 0;
+}
+.card1 .price .doller sup, .card2 .price .doller sup, .card3 .price .doller sup
+{
+    font-size: 30px;
+    font-weight: 700;
+}
+.card1 .price .month, .card2 .price .month, .card3 .price .month
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+     color: #e7e9ee;
+    letter-spacing: 0.5;
+    background: rgba(255,255,255,0.4);
+    border-radius: 50px;
+    padding: 4px 15px;
+}
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.features ul{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card2 .features ul{
+    padding-top: 30px;
+}
+.features ul li{
+    list-style: none;
+    color: rgba(255,255,255,0.9);
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    padding: 5px 0;
+}
+ .buy-btn{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+} 
+.buy-btn a{
+    text-decoration: none;
+    border-style: solid;border-color:
+#c6e3fa #D3E7EE #4dccff  #a8d5f7;border-width: 2px;
+    border-radius: 50px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2px;
+   transition: 0.3s all ease;
+   /* color: #FE7A15; */
+   color: #f7f1e3;
+}
+.buy-btn a:hover{
+    background: rgba(255,255,255,0.1);
+    color: rgba(0,0,0,0.1);
+    letter-spacing: 0px;
+}
+
+
+
+
+
+
+
+
+
